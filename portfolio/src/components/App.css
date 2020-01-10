@@ -1,0 +1,13 @@
+body {
+    background-image: url("./images/photo-1453928582365-b6ad33cbcf64.jpeg");
+}
+.jumbotron {
+    opacity: 85%;
+    background-color: darkgray;
+}
+p {
+    display: inline-block
+}
+img {
+    display: inline-block;
+}
