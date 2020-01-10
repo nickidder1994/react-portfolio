@@ -6,8 +6,13 @@ body {
     background-color: darkgray;
 }
 p {
-    display: inline-block
+    display: inline;
 }
-img {
-    display: inline-block;
+#self {
+    display: inline;
+    padding-right: 10px;
+    float: left;
+}
+#mern {
+    margin-left: 20px;
 }
