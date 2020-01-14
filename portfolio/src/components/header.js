@@ -2,6 +2,7 @@ import React from "react";
 import Mern from "./images/6392882854363136.svg"
 import self from "./images/IMG_4325.jpeg"
 import "./App.css"
+import Portfolio from "./portfolio"
 
 import {
     BrowserRouter as Router,
@@ -21,10 +22,10 @@ function Name() {
                      <nav className="navbar navbar-dark bg-dark">
                         <ul>
                             <li>
-                                <Link to="/"><h3>About Me</h3></Link>
+                                <Link to="/header"><h3>About Me</h3></Link>
                             </li>
                             <li>
-                                <Link to="./components/portfolio"><h3>Portfolio</h3></Link>
+                                <Link to="./portfolio"><h3>Portfolio</h3></Link>
                             </li>
                             <li>
                                 <Link to="./contacts"><h3>Contacts</h3></Link>
@@ -32,7 +33,15 @@ function Name() {
                         </ul>    
                     </nav>
                 </div>
-        </Router> 
+                <Switch>
+          <Route path="/header">
+            <Name />
+          </Route>
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+        </Switch>
+    </Router>
             <div className="jumbotron">
                     <img src={self} alt="" id="self" width="170" height="200"/>
                 <p>Hello my name is Nicholas Kidder, I am 25 years old and currently I'm working as a metal fabricator at a sheet metal shop in Fullerton, California but I'm looking to make a career change.
