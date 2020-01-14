@@ -16,3 +16,10 @@ p {
 #mern {
     margin-left: 20px;
 }
+li {
+    margin-left: 125px;
+    float: left;
+}
+h3 {
+    color: white;
+}
